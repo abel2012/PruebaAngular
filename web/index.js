@@ -5,7 +5,7 @@
 
 var app=angular.module("app",[]);
 
-module.controller("indexcontroller",function($scope){
+app.controller("indexcontroller",function($scope){
     
     
     scope.nombre="Abel";
