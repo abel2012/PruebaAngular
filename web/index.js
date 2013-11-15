@@ -8,7 +8,7 @@ var app=angular.module("app",[]);
 app.controller("indexcontroller",function($scope){
     
     
-    scope.nombre="Abel";
+    $scope.nombre="Abel";
 
     
     
