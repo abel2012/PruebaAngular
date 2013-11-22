@@ -11,7 +11,21 @@ and open the template in the editor.
         <script type="text/javascript" src="index.js"></script>
     </head>
     <body ng-controller="indexcontroller">
-        <div><p>hola:{{entidadBancaria.nombre}}kkk</p>
+        <div>
+            <p>hola:{{entidadBancaria.nombre}}</p>
+         </div>
+         <div>
+             <table>
+                 <tr ng-repeat="entidadBancaria in entidadesBancarias">
+                     <td>  Id: {{entidadesBancarias.idEntidadBancaria}} </td> 
+                     <td>  CodigoEntidad: {{entidadesBancarias.codigoEntidad}}</td>
+                     <td>  Nombre:{{entidadesBancarias.nombre}}</td>
+                     <td> Cif:{{entidadesBancarias.cif}}</td>
+                     <td> TipoEntidadBancaria:{{entidadesBancarias.tipoEntidadBancaria}}</td>
+                     
+                 </tr>
+                 
+             </table>
          </div>
     </body>
 </html>
