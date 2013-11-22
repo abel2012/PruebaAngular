@@ -1,0 +1,26 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html ng-app="app3">
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="lib/angular/js/angular.js"></script>
+        <script type="text/javascript" src="read.js"></script>
+    </head>
+    <body ng-controller="readcontroller">
+        <div>
+            <table>
+                <tr ng-repeat="entidadBancaria in entidadesBancarias">
+                    <td>  Id: {{entidadBancaria.idEntidadBancaria}} </td> 
+                    <td>  CodigoEntidad: {{entidadBancaria.codigoEntidad}}</td>
+                    <td>  Nombre:{{entidadBancaria.nombre}}</td>
+                    
+                </tr>
+
+            </table>
+        </div>
+    </body>
+</html>

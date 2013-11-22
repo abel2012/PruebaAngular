@@ -12,20 +12,12 @@ and open the template in the editor.
     </head>
     <body ng-controller="indexcontroller">
         <div>
-            <p>hola:{{entidadBancaria.nombre}}</p>
+            <p>Id: {{entidadBancaria.idEntidadBancaria}}</p>
+            <p> CodigoEntidad: {{entidadBancaria.codigoEntidad}} </p>
+            <p> Nombre:{{entidadBancaria.nombre}}</p>
+            <p> Cif:{{entidadBancaria.cif}}</p>
+            
          </div>
-         <div>
-             <table>
-                 <tr ng-repeat="entidadBancaria in entidadesBancarias">
-                     <td>  Id: {{entidadBancaria.idEntidadBancaria}} </td> 
-                     <td>  CodigoEntidad: {{entidadBancaria.codigoEntidad}}</td>
-                     <td>  Nombre:{{entidadBancaria.nombre}}</td>
-                     <td> Cif:{{entidadBancaria.cif}}</td>
-                     <td> TipoEntidadBancaria:{{entidadBancaria.tipoEntidadBancaria}}</td>
-                     
-                 </tr>
-                 
-             </table>
-         </div>
+         
     </body>
 </html>
