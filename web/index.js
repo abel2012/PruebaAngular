@@ -9,10 +9,11 @@ app.controller("indexcontroller",function($scope,$http){
     
     
     //$scope.nombre="Abel";
-     $scope.EntidadBancaria;
+     $scope.entidadBancaria=null;
 
-    $http.get("http://localhost:8084/Prueba/entidadBancaria.json.jsp",function(result) {
-        $scope.EntidadBancaria=result;
+    $http.get("http://localhost:8084/Prueba/entidadBancaria.json.jsp?idEntidadBancaria=4",function(result) {
+        alert("hola caracola");
+        $scope.entidadBancaria=result;
       
     });
     
